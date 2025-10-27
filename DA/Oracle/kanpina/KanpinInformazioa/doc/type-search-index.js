@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"erronka","l":"esportazioa"},{"p":"erronka","l":"importazioa"},{"p":"erronka","l":"konfigurazioa"},{"p":"erronka","l":"main"}];updateSearchResults();

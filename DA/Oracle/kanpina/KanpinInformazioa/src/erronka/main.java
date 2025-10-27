@@ -26,13 +26,16 @@ public class main {
         // importazioa klasea instantziatu eta inportazio prozesua hasi (XML -> DB).
         importazioa inportatzailea = new importazioa();
         inportatzailea.inportatu(config);
+        String probintziaFiltroa = "Bizkaia"; 
+        String herriaFiltroa = "Gorliz";      
         
-        // 3. Datuen Esportazioa
         System.out.println("\n--- Datuen Esportazioa hasi da ---");
+        System.out.println("Esportazio iragazkia aplikatuta: Probintzia -> " + probintziaFiltroa + ", Herria -> " + herriaFiltroa);
         
-        // esportazioa klasea instantziatu eta esportazio prozesua hasi (DB -> CSV eta XML).
+        // esportazioa klasea instantziatu eta esportazio prozesua hasi (DB -> CSV eta XML)
+        // Iragazki-parametroak pasatzen dira (probintzia eta herria).
         esportazioa esportatzailea = new esportazioa();
-        esportatzailea.esportatu(config);
+        esportatzailea.esportatu(config, probintziaFiltroa, herriaFiltroa);
         
         // 4. Amaiera
         System.out.println("\n--- Aplikazioa amaitu da ---");

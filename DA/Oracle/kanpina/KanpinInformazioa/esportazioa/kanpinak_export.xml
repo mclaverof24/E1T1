@@ -1,192 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <kanpinak>
-	<kanpina>
-		<izena>AITZETA</izena>
-		<udalerria>Mutriku</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>271</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>ANGOSTO</izena>
-		<udalerria>Valdegovía/Gaubea</udalerria>
-		<lurraldea>Araba/Álava</lurraldea>
-		<kategoria>P</kategoria>
-		<ahalmena>244</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>Area Autocaravanas Igueldo San Sebastian</izena>
-		<udalerria>Donostia / San Sebastián</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>S</kategoria>
-		<ahalmena>0</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>ÁREA AUTOCARAVANAS Y CARAVANAS LANESTOSA</izena>
-		<udalerria>Legazpi</udalerria>
-		<lurraldea>Bizkaia</lurraldea>
-		<kategoria>S</kategoria>
-		<ahalmena>0</ahalmena>
-	</kanpina>
-	<kanpina>
+	<kanpina id="PBI00006">
 		<izena>ARRIEN</izena>
-		<udalerria>Gorliz</udalerria>
-		<lurraldea>Bizkaia</lurraldea>
+		<deskribapena>Gorlizko badian dago kanpina, hirigunetik 500 metrora. Ingurune natural ederrean dago, zuhaitzez ...</deskribapena>
 		<kategoria>S</kategoria>
-		<ahalmena>385</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>AUTOCARAVANING KOBETAMENDI</izena>
-		<udalerria>Bilbao</udalerria>
-		<lurraldea>Bizkaia</lurraldea>
-		<kategoria>S</kategoria>
-		<ahalmena>40</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>CAMPING BUNGALOWS IGUELDO SAN SEBASTIAN</izena>
-		<udalerria>Donostia / San Sebastián</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>P</kategoria>
-		<ahalmena>901</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>EL ROBLE VERDE</izena>
-		<udalerria>Erriberagoitia/Ribera Alta</udalerria>
-		<lurraldea>Araba/Álava</lurraldea>
-		<kategoria>P</kategoria>
-		<ahalmena>520</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>ENDAI</izena>
-		<udalerria>Mendexa</udalerria>
-		<lurraldea>Bizkaia</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>238</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>FARO DE HIGUER</izena>
-		<udalerria>Hondarribia</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>416</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>GALDONA</izena>
-		<udalerria>Mutriku</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>120</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>GRAN CAMPING ZARAUZ</izena>
-		<udalerria>Zarautz</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>S</kategoria>
-		<ahalmena>1400</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>IBAYA</izena>
-		<udalerria>Vitoria-Gasteiz</udalerria>
-		<lurraldea>Araba/Álava</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>250</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>IGARA DE SAN SEBASTIAN</izena>
-		<udalerria>Donostia / San Sebastián</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>P</kategoria>
-		<ahalmena>460</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>ITXASPE</izena>
-		<udalerria>Deba</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>P</kategoria>
-		<ahalmena>483</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>JAIZKIBEL</izena>
-		<udalerria>Hondarribia</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>324</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>LAKIOLA</izena>
-		<udalerria>Legazpi</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>20</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>LEAGI</izena>
-		<udalerria>Mendexa</udalerria>
-		<lurraldea>Bizkaia</lurraldea>
-		<kategoria>S</kategoria>
-		<ahalmena>673</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>OLIDEN</izena>
-		<udalerria>Mendexa</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>S</kategoria>
-		<ahalmena>235</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>PLAYA DE ORIO</izena>
-		<udalerria>Orio</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>P</kategoria>
-		<ahalmena>764</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>PORTUONDO</izena>
-		<udalerria>Mundaka</udalerria>
-		<lurraldea>Bizkaia</lurraldea>
-		<kategoria>P</kategoria>
-		<ahalmena>344</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>SANTA ELENA</izena>
-		<udalerria>Mutriku</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>120</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>SATURRARAN</izena>
-		<udalerria>Mutriku</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>100</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>SOPELANA</izena>
-		<udalerria>Sopela</udalerria>
-		<lurraldea>Bizkaia</lurraldea>
-		<kategoria>T</kategoria>
-		<ahalmena>600</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>TALAI MENDI</izena>
-		<udalerria>Zarautz</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>S</kategoria>
-		<ahalmena>900</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>ZINGIRA</izena>
-		<udalerria>Aia</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>S</kategoria>
-		<ahalmena>500</ahalmena>
-	</kanpina>
-	<kanpina>
-		<izena>ZUMAIA</izena>
-		<udalerria>Zumaia</udalerria>
-		<lurraldea>Gipuzkoa</lurraldea>
-		<kategoria>P</kategoria>
-		<ahalmena>497</ahalmena>
+		<edukiera>385</edukiera>
+		<kokalekua>43.4189510874382,-2.93585452004745</kokalekua>
+		<helbidea>
+			<kalea>Urezarantza Bidea 15</kalea>
+			<postaKodea>48630</postaKodea>
+			<herria id="43">Gorliz</herria>
+			<probintzia id="48">Bizkaia</probintzia>
+		</helbidea>
+		<telefonoa>946 771 911</telefonoa>
+		<emaila>recepcion@campinggorliz.com</emaila>
+		<webgunea>http://www.campinggorliz.com/es/inicio.html</webgunea>
+		<estekak>
+			<friendly>https://turismoa.euskadi.eus/eu/ostatuak/arrien-kanpina/aa30-12375/eu/</friendly>
+			<physical>https://turismoa.euskadi.eus/aa30-12375/eu/contenidos/a_alojamiento/0000000631_a1_rec_turismo/eu_631/631-ficha2.html</physical>
+		</estekak>
+		<fitxategiak>
+			<dataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000631_a1_rec_turismo/eu_631/data/631_openData.xml</dataXML>
+			<metadataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000631_a1_rec_turismo/r01Index/0000000631_a1_rec_turismo-idxContent.xml</metadataXML>
+			<zipFile>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000631_a1_rec_turismo/opendata/0000000631_a1_rec_turismo.zip</zipFile>
+		</fitxategiak>
 	</kanpina>
 </kanpinak>
