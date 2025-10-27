@@ -23,7 +23,7 @@ public class esportazioa {
      * @param probintziaIzena Esportatu nahi den probintziaren izena.
      * @param herriaIzena Esportatu nahi den herriaren izena.
      */
-    public void esportatu(Properties config, String probintziaIzena, String herriaIzena) {
+    public void esportatu(Properties config, String herriaIzena) {
         // Konexio-parametroak irakurri
         String dbUrl = config.getProperty("db_url").trim();
         String dbUser = config.getProperty("db_user").trim();
@@ -46,7 +46,7 @@ public class esportazioa {
                          "FROM KANPINAK K " +
                          "JOIN HERRIAK H ON K.HERRI_KODEA = H.KODEA " +
                          "JOIN PROBINTZIAK P ON K.PROBINTZIA_KODEA = P.KODEA " +
-                         "WHERE P.IZENA = ? AND H.IZENA = ? " + // <-- Iragazkiak hemen aplikatuta
+                         "WHERE H.KODEA = ? " + // <-- Iragazkiak hemen aplikatuta
                          "ORDER BY K.IZENA";
 
             // PreparedStatement sortu (scrollable ResultSet-erako)
@@ -54,9 +54,8 @@ public class esportazioa {
                  ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY)) {
 
                 // Parametroak ezarri (DB injekzioa saihesteko)
-                pstmt.setString(1, probintziaIzena.trim());
-                pstmt.setString(2, herriaIzena.trim());
-
+                pstmt.setString(1, herriaIzena.trim());
+                
                 try (ResultSet rs = pstmt.executeQuery()) {
                     
                     // 1. Datuak CSV fitxategira esportatu

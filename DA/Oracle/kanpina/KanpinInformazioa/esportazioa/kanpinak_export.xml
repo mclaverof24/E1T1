@@ -1,28 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <kanpinak>
-	<kanpina id="PBI00006">
-		<izena>ARRIEN</izena>
-		<deskribapena>Gorlizko badian dago kanpina, hirigunetik 500 metrora. Ingurune natural ederrean dago, zuhaitzez ...</deskribapena>
+	<kanpina id="PSS00022">
+		<izena>Area Autocaravanas Igueldo San Sebastian</izena>
+		<deskribapena>"Camping Bungalows Igeldo San Sebastián Kanpina"  mendia eta itsasoaren artean...</deskribapena>
 		<kategoria>S</kategoria>
-		<edukiera>385</edukiera>
-		<kokalekua>43.4189510874382,-2.93585452004745</kokalekua>
+		<edukiera>0</edukiera>
+		<kokalekua>43.3047502711931,-2.04576374935098</kokalekua>
 		<helbidea>
-			<kalea>Urezarantza Bidea 15</kalea>
-			<postaKodea>48630</postaKodea>
-			<herria id="43">Gorliz</herria>
-			<probintzia id="48">Bizkaia</probintzia>
+			<kalea>Paseo Padre Orkolaga, 69</kalea>
+			<postaKodea>20008</postaKodea>
+			<herria id="69">Donostia / San Sebastián</herria>
+			<probintzia id="20">Gipuzkoa</probintzia>
 		</helbidea>
-		<telefonoa>946 771 911</telefonoa>
-		<emaila>recepcion@campinggorliz.com</emaila>
-		<webgunea>http://www.campinggorliz.com/es/inicio.html</webgunea>
+		<telefonoa>null</telefonoa>
+		<emaila>oscar@campingigueldo.com</emaila>
+		<webgunea>www.campingigueldo.com</webgunea>
 		<estekak>
-			<friendly>https://turismoa.euskadi.eus/eu/ostatuak/arrien-kanpina/aa30-12375/eu/</friendly>
-			<physical>https://turismoa.euskadi.eus/aa30-12375/eu/contenidos/a_alojamiento/0000000631_a1_rec_turismo/eu_631/631-ficha2.html</physical>
+			<friendly>https://turismoa.euskadi.eus/eu/ostatuak/camping-bungalows-igueldo-san-sebastian-area-autocaravanas/aa30-12375/eu/</friendly>
+			<physical>https://turismoa.euskadi.eus/aa30-12375/eu/contenidos/a_alojamiento/0000200413_a1_rec_turismo/eu_200413/200413-ficha2.html</physical>
 		</estekak>
 		<fitxategiak>
-			<dataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000631_a1_rec_turismo/eu_631/data/631_openData.xml</dataXML>
-			<metadataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000631_a1_rec_turismo/r01Index/0000000631_a1_rec_turismo-idxContent.xml</metadataXML>
-			<zipFile>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000631_a1_rec_turismo/opendata/0000000631_a1_rec_turismo.zip</zipFile>
+			<dataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000200413_a1_rec_turismo/eu_200413/data/200413_openData.xml</dataXML>
+			<metadataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000200413_a1_rec_turismo/r01Index/0000200413_a1_rec_turismo-idxContent.xml</metadataXML>
+			<zipFile>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000200413_a1_rec_turismo/opendata/0000200413_a1_rec_turismo.zip</zipFile>
+		</fitxategiak>
+	</kanpina>
+	<kanpina id="PSS00006">
+		<izena>CAMPING BUNGALOWS IGUELDO SAN SEBASTIAN</izena>
+		<deskribapena>Donostian, hondartzatik 5 kilometrora, mendia eta itsasoa uztartzen diren leku ederrean dagoen le...</deskribapena>
+		<kategoria>P</kategoria>
+		<edukiera>901</edukiera>
+		<kokalekua>43.3047502711931,-2.04576374935098</kokalekua>
+		<helbidea>
+			<kalea>Padre Orkolaga Ibibidea 69</kalea>
+			<postaKodea>20008</postaKodea>
+			<herria id="69">Donostia / San Sebastián</herria>
+			<probintzia id="20">Gipuzkoa</probintzia>
+		</helbidea>
+		<telefonoa>null</telefonoa>
+		<emaila>info@campingigueldo.com</emaila>
+		<webgunea>www.campingigueldo.com</webgunea>
+		<estekak>
+			<friendly>https://turismoa.euskadi.eus/eu/ostatuak/igueldo-kanpina/aa30-12375/eu/</friendly>
+			<physical>https://turismoa.euskadi.eus/aa30-12375/eu/contenidos/a_alojamiento/0000000633_a1_rec_turismo/eu_633/633-ficha2.html</physical>
+		</estekak>
+		<fitxategiak>
+			<dataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000633_a1_rec_turismo/eu_633/data/633_openData.xml</dataXML>
+			<metadataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000633_a1_rec_turismo/r01Index/0000000633_a1_rec_turismo-idxContent.xml</metadataXML>
+			<zipFile>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000633_a1_rec_turismo/opendata/0000000633_a1_rec_turismo.zip</zipFile>
+		</fitxategiak>
+	</kanpina>
+	<kanpina id="PSS00020">
+		<izena>IGARA DE SAN SEBASTIAN</izena>
+		<deskribapena>Donostiako Igara campinga ingurune lasaian dago, naturaz inguratua, baina aldi berean, hiriaren e...</deskribapena>
+		<kategoria>P</kategoria>
+		<edukiera>460</edukiera>
+		<kokalekua>43.2969178748344,-2.03774261238394</kokalekua>
+		<helbidea>
+			<kalea>Igara Bidea 195</kalea>
+			<postaKodea>20018</postaKodea>
+			<herria id="69">Donostia / San Sebastián</herria>
+			<probintzia id="20">Gipuzkoa</probintzia>
+		</helbidea>
+		<telefonoa>null</telefonoa>
+		<emaila>info@campingdesansebastian.com</emaila>
+		<webgunea>www.campingdesansebastian.com</webgunea>
+		<estekak>
+			<friendly>https://turismoa.euskadi.eus/eu/ostatuak/camping-igara/aa30-12375/eu/</friendly>
+			<physical>https://turismoa.euskadi.eus/aa30-12375/eu/contenidos/a_alojamiento/0000070021_a1_rec_turismo/eu_70021/70021-ficha2.html</physical>
+		</estekak>
+		<fitxategiak>
+			<dataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000070021_a1_rec_turismo/eu_70021/data/70021_openData.xml</dataXML>
+			<metadataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000070021_a1_rec_turismo/r01Index/0000070021_a1_rec_turismo-idxContent.xml</metadataXML>
+			<zipFile>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000070021_a1_rec_turismo/opendata/0000070021_a1_rec_turismo.zip</zipFile>
 		</fitxategiak>
 	</kanpina>
 </kanpinak>
