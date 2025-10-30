@@ -13,6 +13,7 @@ CREATE TYPE HELBIDE_TYP AS OBJECT (
     PROBINTZIA VARCHAR2(50)
 );
 /
+
 CREATE TYPE LANGILE_TYP AS OBJECT (
     NAN VARCHAR2(10),
     IZENA VARCHAR2(50),
@@ -23,7 +24,7 @@ CREATE TYPE LANGILE_TYP AS OBJECT (
     SOLDATA_OINARRIA NUMBER(10,2),
     MEMBER FUNCTION SOLDATA_TOTALA RETURN NUMBER
 ) NOT FINAL;
-
+/
 
 CREATE TYPE BODY LANGILE_TYP AS
     MEMBER FUNCTION SOLDATA_TOTALA RETURN NUMBER IS
@@ -34,7 +35,6 @@ CREATE TYPE BODY LANGILE_TYP AS
         IF ANTZINATASUN_URTEAK < 0 THEN
             ANTZINATASUN_URTEAK := 0;
         END IF;
-
         SOLDATA_TOTALA_KALK := SOLDATA_OINARRIA * (1 + ANTZINATASUN_URTEAK * 0.02);
         RETURN ROUND(SOLDATA_TOTALA_KALK, 2);
     END;
@@ -51,104 +51,90 @@ CREATE TYPE TEKNIKARI_TYP UNDER LANGILE_TYP (
 );
 /
 
-
-CREATE TABLE ADMINISTRARIAK OF ADMINISTRARY_TYP;
+CREATE TABLE ADMINISTRARIAK OF ADMINISTRARI_TYP;
 /
-
 CREATE TABLE TEKNIKARIAK OF TEKNIKARI_TYP;
 /
 
-
 INSERT INTO ADMINISTRARIAK VALUES (
-    ADMINISTRARY_TYP(
-        '11111111A',
-        'Mikel',
-        'Clavero',
+    ADMINISTRARI_TYP(
+        '11111111A', 'Mikel', 'Clavero',
         HELBIDE_TYP('Kale Nagusia 1', '48920', 'Portugalete', 'Bizkaia'),
-        TELEFONOAK_T(
+        TELEFONOAK_T( 
             TELEFONO_TYP('600111111'),
             TELEFONO_TYP('944111111')
         ),
-        TO_DATE('2020-05-15', 'YYYY-MM-DD'),
-        25000.00,
-        'Informatika'
+        TO_DATE('2020-05-15', 'YYYY-MM-DD'), 25000.00, 'Informatika'
     )
 );
 
 INSERT INTO ADMINISTRARIAK VALUES (
-    ADMINISTRARY_TYP(
-        '22222222B',
-        'Xabier',
-        'Lopez',
+    ADMINISTRARI_TYP(
+        '22222222B', 'Xabier', 'Lopez',
         HELBIDE_TYP('Kale Nagusia 2', '48980', 'Santurtzi', 'Bizkaia'),
         TELEFONOAK_T(
             TELEFONO_TYP('600222222')
         ),
-        TO_DATE('2023-10-01', 'YYYY-MM-DD'),
-        22000.00,
-        'Segurtasuna'
+        TO_DATE('2023-10-01', 'YYYY-MM-DD'), 22000.00, 'Segurtasuna'
     )
 );
 
 INSERT INTO TEKNIKARIAK VALUES (
     TEKNIKARI_TYP(
-        '33333333C',
-        'Sean',
-        'Alberdi',
+        '33333333C', 'Sean', 'Alberdi',
         HELBIDE_TYP('Kale Nagusia 3', '48920', 'Portugalete', 'Bizkaia'),
         TELEFONOAK_T(
             TELEFONO_TYP('600333333')
         ),
-        TO_DATE('2018-01-01', 'YYYY-MM-DD'),
-        30000.00,
-        'Serbitzu Instalazioak'
+        TO_DATE('2018-01-01', 'YYYY-MM-DD'), 30000.00, 'Serbitzu Instalazioak'
     )
 );
 
 INSERT INTO TEKNIKARIAK VALUES (
     TEKNIKARI_TYP(
-        '44444444D',
-        'Erlantz',
-        'García',
+        '44444444D', 'Erlantz', 'García',
         HELBIDE_TYP('Kale Nagusia 4', '48980', 'Santurtzi', 'Bizkaia'),
         TELEFONOAK_T(
             TELEFONO_TYP('600444444'),
             TELEFONO_TYP('943555555')
         ),
-        TO_DATE('2024-01-20', 'YYYY-MM-DD'),
-        28000.00,
-        'Aplikazioen Mantenimendua'
+        TO_DATE('2024-01-20', 'YYYY-MM-DD'), 28000.00, 'Aplikazioen Mantenimendua'
     )
 );
-
 COMMIT;
 /
 
+
 SET SERVEROUTPUT ON;
 DECLARE
-    CURSOR C_ADMINISTRARI IS
-        SELECT VALUE(A) AS ADM FROM ADMINISTRARIAK A;
-    V_ADMINISTRARI ADMINISTRARY_TYP;
+    CURSOR C_LANGILE IS
+        SELECT VALUE(A) AS EMP FROM ADMINISTRARIAK A
+        UNION ALL
+        SELECT VALUE(T) AS EMP FROM TEKNIKARIAK T
+        ORDER BY 1; 
+        
+    V_LANGILE LANGILE_TYP; 
     V_TELEFONOAK VARCHAR2(200);
+    V_ADMINISTRARI ADMINISTRARI_TYP;
+    V_TEKNIKARI TEKNIKARI_TYP;
+
 BEGIN
-    DBMS_OUTPUT.PUT_LINE('--- ADMINISTRARIEN INFORMAZIOA ---');
+    DBMS_OUTPUT.PUT_LINE('--- LANGILE GUZTIEN INFORMAZIOA (ADMINISTRARI ETA TEKNIKARI) ---');
     DBMS_OUTPUT.PUT_LINE(' ');
 
-    FOR V_ADMINISTRARI_REC IN C_ADMINISTRARI LOOP
-        V_ADMINISTRARI := V_ADMINISTRARI_REC.ADM;
-
+    FOR V_LANGILE_REC IN C_LANGILE LOOP
+        V_LANGILE := V_LANGILE_REC.EMP;
+        DBMS_OUTPUT.PUT_LINE('NAN: ' || V_LANGILE.nan);
+        DBMS_OUTPUT.PUT_LINE('IZENA: ' || V_LANGILE.izena || ' ' || V_LANGILE.abizena);
+        DBMS_OUTPUT.PUT_LINE('HELBIDEA: ' || V_LANGILE.helbidea.helbidea);
+        DBMS_OUTPUT.PUT_LINE('HERRIA: ' || V_LANGILE.helbidea.herria);
         V_TELEFONOAK := '';
-        FOR T IN (SELECT TELEFONO_ZBK FROM TABLE(V_ADMINISTARI.TELEFONOAK)) LOOP
+        FOR T IN (SELECT TELEFONO_ZBK FROM TABLE(V_LANGILE.TELEFONOAK)) LOOP 
             V_TELEFONOAK := V_TELEFONOAK || T.TELEFONO_ZBK || ' ';
         END LOOP;
-
-        DBMS_OUTPUT.PUT_LINE('NAN: ' || V_ADMINISTRARI.nan);
-        DBMS_OUTPUT.PUT_LINE('IZENA: ' || V_ADMINISTRARI.izena || ' ' || V_ADMINISTRARI.abizena);
-        DBMS_OUTPUT.PUT_LINE('HELBIDEA: ' || V_ADMINISTRARI.helbidea.helbidea);
-        DBMS_OUTPUT.PUT_LINE('HERRIA: ' || V_ADMINISTRARI.helbidea.herria);
         DBMS_OUTPUT.PUT_LINE('TELEFONOAK: ' || V_TELEFONOAK);
-        DBMS_OUTPUT.PUT_LINE('SOLDATA OINARRIA: ' || V_ADMINISTRARI.soldata_oinarria);
-        DBMS_OUTPUT.PUT_LINE('SOLDATA TOTALA: ' || V_ADMINISTRARI.soldata_totala);
+        DBMS_OUTPUT.PUT_LINE('SOLDATA OINARRIA: ' || V_LANGILE.soldata_oinarria);
+        DBMS_OUTPUT.PUT_LINE('SOLDATA TOTALA: ' || V_LANGILE.SOLDATA_TOTALA); 
         DBMS_OUTPUT.PUT_LINE('------------------------------------');
     END LOOP;
 END;
