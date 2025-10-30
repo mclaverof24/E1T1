@@ -97,37 +97,6 @@ VALUES ('44444444D', '600444444');
 INSERT INTO telefono_typ (langile_nan, telefono_zenbakia)
 VALUES ('44444444D', '943555555');
 
-Charlar
-
-Nueva Conversación
-
-🤓 Explica algo complejo
-
-Explica la Inteligencia Artificial de tal manera que pueda explicársela a mi hijo de seis años.
-
-
-🧠 Obtén sugerencias y crea nuevas ideas
-
-Por favor, dame las mejores 10 ideas para viajar alrededor del mundo".
-
-
-💭 Traducir, resumir, corregir gramática y más...
-
-Traduce "Te amo", al francés.
-
-
-
-AITOPIA
-
-
-AITOPIA
-coin image
-10
-Actualizar
-
-
-
-
 CREATE TABLE langile_typ (
     nan VARCHAR2(10) PRIMARY KEY,
     izena VARCHAR2(50) NOT NULL,
