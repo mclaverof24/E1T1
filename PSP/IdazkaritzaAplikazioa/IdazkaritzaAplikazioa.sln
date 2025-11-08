@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Idazkaritza", "Idazkaritza\Idazkaritza.csproj", "{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bezeroa", "Bezeroa\Bezeroa.csproj", "{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0F2EACB-884D-40F2-8667-F4C9417AC331}
+	EndGlobalSection
+EndGlobal
