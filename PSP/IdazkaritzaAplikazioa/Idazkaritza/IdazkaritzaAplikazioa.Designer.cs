@@ -50,9 +50,9 @@
             tabPage3 = new TabPage();
             label7 = new Label();
             label6 = new Label();
-            button4 = new Button();
-            comboBox2 = new ComboBox();
-            richTextBox1 = new RichTextBox();
+            mezuaBidaliBotoia = new Button();
+            bezeroMezuHartzaileakComboBox = new ComboBox();
+            mezuEdukiaRichTextBox = new RichTextBox();
             Bideojokoa = new TabPage();
             label13 = new Label();
             label12 = new Label();
@@ -269,9 +269,9 @@
             // 
             tabPage3.Controls.Add(label7);
             tabPage3.Controls.Add(label6);
-            tabPage3.Controls.Add(button4);
-            tabPage3.Controls.Add(comboBox2);
-            tabPage3.Controls.Add(richTextBox1);
+            tabPage3.Controls.Add(mezuaBidaliBotoia);
+            tabPage3.Controls.Add(bezeroMezuHartzaileakComboBox);
+            tabPage3.Controls.Add(mezuEdukiaRichTextBox);
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Size = new Size(795, 412);
@@ -298,31 +298,33 @@
             label6.TabIndex = 3;
             label6.Text = "Bezeroa";
             // 
-            // button4
+            // mezuaBidaliBotoia
             // 
-            button4.Location = new Point(581, 229);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 2;
-            button4.Text = "Bidali";
-            button4.UseVisualStyleBackColor = true;
+            mezuaBidaliBotoia.Location = new Point(581, 229);
+            mezuaBidaliBotoia.Name = "mezuaBidaliBotoia";
+            mezuaBidaliBotoia.Size = new Size(94, 29);
+            mezuaBidaliBotoia.TabIndex = 2;
+            mezuaBidaliBotoia.Text = "Bidali";
+            mezuaBidaliBotoia.UseVisualStyleBackColor = true;
+            mezuaBidaliBotoia.Click += MezuaBidaliBotoia_Click;
             // 
-            // comboBox2
+            // bezeroMezuHartzaileakComboBox
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(134, 65);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(238, 28);
-            comboBox2.TabIndex = 1;
-            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            bezeroMezuHartzaileakComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            bezeroMezuHartzaileakComboBox.FormattingEnabled = true;
+            bezeroMezuHartzaileakComboBox.Location = new Point(134, 65);
+            bezeroMezuHartzaileakComboBox.Name = "bezeroMezuHartzaileakComboBox";
+            bezeroMezuHartzaileakComboBox.Size = new Size(238, 28);
+            bezeroMezuHartzaileakComboBox.TabIndex = 1;
+            bezeroMezuHartzaileakComboBox.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
-            // richTextBox1
+            // mezuEdukiaRichTextBox
             // 
-            richTextBox1.Location = new Point(27, 176);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(492, 159);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "";
+            mezuEdukiaRichTextBox.Location = new Point(27, 176);
+            mezuEdukiaRichTextBox.Name = "mezuEdukiaRichTextBox";
+            mezuEdukiaRichTextBox.Size = new Size(492, 159);
+            mezuEdukiaRichTextBox.TabIndex = 0;
+            mezuEdukiaRichTextBox.Text = "";
             // 
             // Bideojokoa
             // 
@@ -541,11 +543,11 @@
         private DataGridViewTextBoxColumn Egoera;
         private Label label5;
         private Label label4;
-        private RichTextBox richTextBox1;
-        private ComboBox comboBox2;
+        private RichTextBox mezuEdukiaRichTextBox;
+        private ComboBox bezeroMezuHartzaileakComboBox;
         private Label label7;
         private Label label6;
-        private Button button4;
+        private Button mezuaBidaliBotoia;
         private TabPage Bideojokoa;
         private TabPage Datuak;
         private Button button6;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Idazkaritza")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c8138125e3f88784aeab4fb9a3b97e39d07e3ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4748061d3625c1dd040ad8eae09a5c07207beba")]
 [assembly: System.Reflection.AssemblyProductAttribute("Idazkaritza")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Idazkaritza")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

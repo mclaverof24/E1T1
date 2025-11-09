@@ -11,11 +11,7 @@ namespace KlasePartekatuak
     {
         [JsonIgnore]
         public int Id { get; set; }
-        [JsonIgnore]
-        public Bezeroa Bezeroa { get; set; }
         public string Mota { get; set; }
-        [JsonIgnore]
-        public int LangileId { get; set; }
         [JsonIgnore]
         public bool Beteta { get; set; }
     }
