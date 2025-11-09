@@ -1,0 +1,12 @@
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\bin\Debug\net8.0\KlasePartekatuak.deps.json
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\bin\Debug\net8.0\KlasePartekatuak.dll
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\bin\Debug\net8.0\KlasePartekatuak.pdb
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\KlasePartekatuak.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\KlasePartekatuak.AssemblyInfoInputs.cache
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\KlasePartekatuak.AssemblyInfo.cs
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\KlasePartekatuak.csproj.CoreCompileInputs.cache
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\KlasePartekatuak.sourcelink.json
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\KlasePartekatuak.dll
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\refint\KlasePartekatuak.dll
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\KlasePartekatuak.pdb
+C:\git\erronkak\E1T1\PSP\IdazkaritzaAplikazioa\KlasePartekatuak\obj\Debug\net8.0\ref\KlasePartekatuak.dll
