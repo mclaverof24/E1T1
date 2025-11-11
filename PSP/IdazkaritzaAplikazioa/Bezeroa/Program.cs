@@ -1,7 +1,8 @@
 
 using System.Text.Json;
+using KlasePartekatuak;
 
-namespace KlasePartekatuak
+namespace BezeroaApp
 {
     internal static class Program
     {

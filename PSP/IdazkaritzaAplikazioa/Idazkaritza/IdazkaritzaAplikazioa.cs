@@ -11,10 +11,10 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Idazkaritza;
+using KlasePartekatuak;
 
 
-namespace KlasePartekatuak
+namespace Idazkaritza
 {
     public partial class IdazkaritzaAplikazioa : Form
     {

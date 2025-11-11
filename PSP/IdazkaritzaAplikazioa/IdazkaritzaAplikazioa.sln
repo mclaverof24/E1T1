@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Idazkaritza", "Idazkaritza\Idazkaritza.csproj", "{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdazkaritzaApp", "Idazkaritza\IdazkaritzaApp.csproj", "{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bezeroa", "Bezeroa\Bezeroa.csproj", "{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BezeroaApp", "Bezeroa\BezeroaApp.csproj", "{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlasePartekatuak", "KlasePartekatuak\KlasePartekatuak.csproj", "{991EBE80-282B-467C-84BF-1B6398F134AE}"
 EndProject

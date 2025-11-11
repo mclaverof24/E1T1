@@ -1,4 +1,4 @@
-﻿namespace KlasePartekatuak
+﻿namespace Idazkaritza
 {
     partial class IdazkaritzaAplikazioa
     {

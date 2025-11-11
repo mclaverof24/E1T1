@@ -1,6 +1,6 @@
 using KlasePartekatuak;
 
-namespace KlasePartekatuak
+namespace Idazkaritza
 {
     internal static class Program
     {

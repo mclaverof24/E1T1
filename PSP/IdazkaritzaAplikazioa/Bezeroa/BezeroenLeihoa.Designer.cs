@@ -1,4 +1,4 @@
-﻿namespace KlasePartekatuak
+﻿namespace BezeroaApp
 {
     partial class BezeroenLeihoa
     {

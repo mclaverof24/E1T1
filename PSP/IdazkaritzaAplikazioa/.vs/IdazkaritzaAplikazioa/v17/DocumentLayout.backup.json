@@ -1,70 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\",
+  "WorkspaceRootPath": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\idazkaritza\\bezeroactrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\bezeroactrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\bezeroa\\bezeroenleihoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\bezeroenleihoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\bezeroa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\bezeroa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\bezeroenleihoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\bezeroenleihoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\idazkaritza\\idazkaritzaaplikazioa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\idazkaritzaaplikazioa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\idazkaritza\\idazkaritzaaplikazioa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\idazkaritzaaplikazioa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\klasepartekatuak\\bezeroa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|solutionrelative:klasepartekatuak\\bezeroa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\idazkaritza\\idazkaritza.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\idazkaritza.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\klasepartekatuak\\mezua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|solutionrelative:klasepartekatuak\\mezua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\bezeroenleihoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\bezeroenleihoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\idazkaritza\\eskaeractrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\eskaeractrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\klasepartekatuak\\eskaera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|solutionrelative:klasepartekatuak\\eskaera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\idazkaritza\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\klasepartekatuak\\mezua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|solutionrelative:klasepartekatuak\\mezua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\klasepartekatuak\\eskaera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|solutionrelative:klasepartekatuak\\eskaera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\klasepartekatuak\\bezeroa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991EBE80-282B-467C-84BF-1B6398F134AE}|KlasePartekatuak\\KlasePartekatuak.csproj|solutionrelative:klasepartekatuak\\bezeroa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\idazkaritza\\idazkaritzaaplikazioa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\idazkaritzaaplikazioa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\idazkaritza\\idazkaritzaaplikazioa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\idazkaritzaaplikazioa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\idazkaritza\\idazkaritzaaplikazioa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\Idazkaritza.csproj|solutionrelative:idazkaritza\\idazkaritzaaplikazioa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\bezeroenleihoa.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\bezeroenleihoa.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\bezeroenleihoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\bezeroenleihoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\bezeroenleihoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\bezeroenleihoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\BezeroaApp.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\bezeroaapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\BezeroaApp.csproj|solutionrelative:bezeroa\\bezeroaapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\IdazkaritzaApp.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\idazkaritza\\idazkaritzaapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D707BCA2-B987-4F1C-8D9B-A0ABDF2175F7}|Idazkaritza\\IdazkaritzaApp.csproj|solutionrelative:idazkaritza\\idazkaritzaapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\BezeroaApp.csproj|c:\\git\\erronkak\\e1t1\\psp\\idazkaritzaaplikazioa\\bezeroa\\bezeroaapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\BezeroaApp.csproj|solutionrelative:bezeroa\\bezeroaapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\bezeroa\\bezeroenleihoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E3AB5B71-A22D-46EA-A9F4-31573C47F1CD}|Bezeroa\\Bezeroa.csproj|solutionrelative:bezeroa\\bezeroenleihoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,11 +90,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
+              "Title": "Bezeroa",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroaApp.csproj",
+              "RelativeDocumentMoniker": "Bezeroa\\BezeroaApp.csproj",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroaApp.csproj",
+              "RelativeToolTip": "Bezeroa\\BezeroaApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-11T07:31:01.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Mezua.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Mezua.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Mezua.cs",
               "RelativeDocumentMoniker": "KlasePartekatuak\\Mezua.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Mezua.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Mezua.cs",
               "RelativeToolTip": "KlasePartekatuak\\Mezua.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -99,11 +115,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "EskaeraCtrl.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\EskaeraCtrl.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\EskaeraCtrl.cs",
               "RelativeDocumentMoniker": "Idazkaritza\\EskaeraCtrl.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\EskaeraCtrl.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\EskaeraCtrl.cs",
               "RelativeToolTip": "Idazkaritza\\EskaeraCtrl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,23 +130,23 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BezeroaCtrl.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\BezeroaCtrl.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\BezeroaCtrl.cs",
               "RelativeDocumentMoniker": "Idazkaritza\\BezeroaCtrl.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\BezeroaCtrl.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\BezeroaCtrl.cs",
               "RelativeToolTip": "Idazkaritza\\BezeroaCtrl.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA3wEIAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T17:23:41.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "Bezeroa.csproj",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\Bezeroa.csproj",
-              "RelativeDocumentMoniker": "Bezeroa\\Bezeroa.csproj",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\Bezeroa.csproj",
-              "RelativeToolTip": "Bezeroa\\Bezeroa.csproj",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroaApp.csproj",
+              "RelativeDocumentMoniker": "Bezeroa\\BezeroaApp.csproj",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroaApp.csproj",
+              "RelativeToolTip": "Bezeroa\\BezeroaApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-11-09T00:15:09.985Z",
@@ -138,12 +154,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Idazkaritza.csproj",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\Idazkaritza.csproj",
-              "RelativeDocumentMoniker": "Idazkaritza\\Idazkaritza.csproj",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\Idazkaritza.csproj",
-              "RelativeToolTip": "Idazkaritza\\Idazkaritza.csproj",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaApp.csproj",
+              "RelativeDocumentMoniker": "Idazkaritza\\IdazkaritzaApp.csproj",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaApp.csproj",
+              "RelativeToolTip": "Idazkaritza\\IdazkaritzaApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-11-09T00:12:14.832Z",
@@ -151,11 +167,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Bezeroa.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Bezeroa.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Bezeroa.cs",
               "RelativeDocumentMoniker": "KlasePartekatuak\\Bezeroa.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Bezeroa.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Bezeroa.cs",
               "RelativeToolTip": "KlasePartekatuak\\Bezeroa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -164,11 +180,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "Eskaera.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Eskaera.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Eskaera.cs",
               "RelativeDocumentMoniker": "KlasePartekatuak\\Eskaera.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Eskaera.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\KlasePartekatuak\\Eskaera.cs",
               "RelativeToolTip": "KlasePartekatuak\\Eskaera.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -177,13 +193,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "BezeroenLeihoa.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.cs",
               "RelativeDocumentMoniker": "Bezeroa\\BezeroenLeihoa.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.cs",
               "RelativeToolTip": "Bezeroa\\BezeroenLeihoa.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwC8AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T20:27:35.054Z",
               "EditorCaption": ""
@@ -192,47 +208,48 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\Program.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\Program.cs",
               "RelativeDocumentMoniker": "Bezeroa\\Program.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\Program.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\Program.cs",
               "RelativeToolTip": "Bezeroa\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T20:27:02.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\Program.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\Program.cs",
               "RelativeDocumentMoniker": "Idazkaritza\\Program.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\Program.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\Program.cs",
               "RelativeToolTip": "Idazkaritza\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T18:28:54.419Z"
+              "WhenOpened": "2025-11-08T18:28:54.419Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "IdazkaritzaAplikazioa.Designer.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.Designer.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.Designer.cs",
               "RelativeDocumentMoniker": "Idazkaritza\\IdazkaritzaAplikazioa.Designer.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.Designer.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.Designer.cs",
               "RelativeToolTip": "Idazkaritza\\IdazkaritzaAplikazioa.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQCAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T18:14:36.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IdazkaritzaAplikazioa.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.cs",
               "RelativeDocumentMoniker": "Idazkaritza\\IdazkaritzaAplikazioa.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.cs [Dise\u00F1o]",
               "RelativeToolTip": "Idazkaritza\\IdazkaritzaAplikazioa.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:52:38.201Z",
@@ -240,24 +257,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "IdazkaritzaAplikazioa.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.cs",
               "RelativeDocumentMoniker": "Idazkaritza\\IdazkaritzaAplikazioa.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Idazkaritza\\IdazkaritzaAplikazioa.cs",
               "RelativeToolTip": "Idazkaritza\\IdazkaritzaAplikazioa.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAxwFgAAACHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:52:32.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "BezeroenLeihoa.resx",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.resx",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.resx",
               "RelativeDocumentMoniker": "Bezeroa\\BezeroenLeihoa.resx",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.resx",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.resx",
               "RelativeToolTip": "Bezeroa\\BezeroenLeihoa.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-11-08T17:50:01.132Z",
@@ -265,24 +282,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "BezeroenLeihoa.Designer.cs",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.Designer.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.Designer.cs",
               "RelativeDocumentMoniker": "Bezeroa\\BezeroenLeihoa.Designer.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.Designer.cs",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.Designer.cs",
               "RelativeToolTip": "Bezeroa\\BezeroenLeihoa.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:49:58.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "BezeroenLeihoa.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.cs",
+              "DocumentMoniker": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.cs",
               "RelativeDocumentMoniker": "Bezeroa\\BezeroenLeihoa.cs",
-              "ToolTip": "C:\\git\\erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\git\\Erronkak\\E1T1\\PSP\\IdazkaritzaAplikazioa\\Bezeroa\\BezeroenLeihoa.cs [Dise\u00F1o]",
               "RelativeToolTip": "Bezeroa\\BezeroenLeihoa.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:49:52.893Z",
