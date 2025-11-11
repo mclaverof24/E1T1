@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using KlasePartekatuak;
 
-namespace Idazkaritza
+namespace IdazkaritzaApp
 {
     public class EskaeraCtrl
     {

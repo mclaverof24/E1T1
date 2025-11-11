@@ -8,8 +8,9 @@ using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Threading.Tasks;
 using KlasePartekatuak;
+using System.Collections.Concurrent;
 
-namespace Idazkaritza
+namespace IdazkaritzaApp
 {
     public class BezeroaCtrl
     {
@@ -50,6 +51,9 @@ namespace Idazkaritza
             while (true)
             {
                 //Reader.ReadLine
+                Eskaera eskaera = JsonSerializer.Deserialize<Eskaera>(Reader.ReadLine());
+
+                IdazkaritzaAplikazioa.Eskaerak.Add(eskaera);
             }
         }
 

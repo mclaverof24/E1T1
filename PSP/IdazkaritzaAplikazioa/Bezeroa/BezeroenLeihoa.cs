@@ -23,7 +23,7 @@ namespace BezeroaApp
         public void BezeroaHasi(int id)
         {
             Bezeroa = new NamedPipeClientStream("hodia" + id);
-            
+
             Reader = new StreamReader(Bezeroa);
             Writer = new StreamWriter(Bezeroa);
             EntzunAtaza = Task.Run(ZerbitzariaEntzun);
@@ -32,6 +32,7 @@ namespace BezeroaApp
         public void ZerbitzariaEntzun()
         {
             Bezeroa.Connect();
+            Writer.AutoFlush = true; // Ezin da ezarri konektatu aurretik, horretarako egiten da hemen, baina ez da Writer-a erabiliko eskaerak bidali arte.
             while (true)
             {
                 Mezua mezua = JsonSerializer.Deserialize<Mezua>(Reader.ReadLine());
@@ -66,14 +67,21 @@ namespace BezeroaApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void mezuakDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void mezuakDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void EskaeraEgin_Click(object sender, EventArgs e)
         {
-
+            if (eskaeraMotaComboBox.SelectedItem!=null)
+            {
+                Eskaera eskaera = new Eskaera { Mota=eskaeraMotaComboBox.SelectedItem.ToString()};
+                if (Bezeroa.IsConnected) {
+                    Writer.WriteLine(JsonSerializer.Serialize(eskaera));
+                    Debug.WriteLine(eskaera.ToString());
+                }
+            }
         }
     }
 }

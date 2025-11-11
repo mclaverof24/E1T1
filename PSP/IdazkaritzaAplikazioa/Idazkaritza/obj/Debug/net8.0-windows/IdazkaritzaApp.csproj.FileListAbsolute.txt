@@ -18,4 +18,4 @@ C:\git\Erronkak\E1T1\PSP\IdazkaritzaAplikazioa\Idazkaritza\obj\Debug\net8.0-wind
 C:\git\Erronkak\E1T1\PSP\IdazkaritzaAplikazioa\Idazkaritza\obj\Debug\net8.0-windows\IdazkaritzaApp.pdb
 C:\git\Erronkak\E1T1\PSP\IdazkaritzaAplikazioa\Idazkaritza\obj\Debug\net8.0-windows\IdazkaritzaApp.genruntimeconfig.cache
 C:\git\Erronkak\E1T1\PSP\IdazkaritzaAplikazioa\Idazkaritza\obj\Debug\net8.0-windows\ref\IdazkaritzaApp.dll
-C:\git\Erronkak\E1T1\PSP\IdazkaritzaAplikazioa\Idazkaritza\obj\Debug\net8.0-windows\Idazkaritza.IdazkaritzaAplikazioa.resources
+C:\git\Erronkak\E1T1\PSP\IdazkaritzaAplikazioa\Idazkaritza\obj\Debug\net8.0-windows\IdazkaritzaApp.IdazkaritzaAplikazioa.resources
