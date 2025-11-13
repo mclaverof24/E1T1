@@ -1,33 +1,28 @@
 #!/bin/bash
 
-# Konfigurazioa
+# Aldagaiak definitu
 SOURCE_DIR="/srv/data"
 TARGET_DIR="/srv/backup"
-LOG_FILE="/var/log/backup.log"
-DATE=$(date +"%Y-%m-%d %H:%M:%S")
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+BACKUP_FILE="$TARGET_DIR/babeskopia_$TIMESTAMP.tar.gz"
+LOG_FILE="/var/log/babeskopia.log"
 
-# Sorkuntza: Backup karpeta ez bada existitzen, sortu
-if [ ! -d "$TARGET_DIR" ]; then
-    mkdir -p "$TARGET_DIR"
-    echo "$DATE - $TARGET_DIR karpeta sortu da." >> $LOG_FILE
-fi
+# Babeskopia karpeta existitzen dela ziurtatu
+mkdir -p $TARGET_DIR
 
-echo "--- $DATE - Babeskopia hasi da ---" >> $LOG_FILE
+# Babeskopia prozesua hasi eta log-ean idatzi
+echo "----------------------------------------------------" >> $LOG_FILE
+echo "Babeskopia hasi da: $TIMESTAMP" >> $LOG_FILE
 
-# rsync erabiliz babeskopia inkrementala
-# -a: artxibo modua (mantendu baimenak, jabeak, etab.)
-# -v: xehetasunak (verbose)
-# --delete: Ezabatu jatorrian ez dauden fitxategiak helburuan
-rsync -av --delete "$SOURCE_DIR/" "$TARGET_DIR/" 2>&1 | while read line ; do
-    echo "$DATE - rsync: $line" >> $LOG_FILE
-done
+# tar komandoa erabili konprimitzeko eta kopiatzeko
+tar -czf $BACKUP_FILE $SOURCE_DIR 2>> $LOG_FILE
 
-EXIT_CODE=$?
-
-if [ $EXIT_CODE -eq 0 ]; then
-    echo "$DATE - Babeskopia ondo amaitu da (Kodea: $EXIT_CODE)." >> $LOG_FILE
+# Emaitza egiaztatu
+if [ $? -eq 0 ]; then
+    echo "Babeskopia ondo burutu da: $BACKUP_FILE" >> $LOG_FILE
 else
-    echo "$DATE - ⚠️ AKATSA: Babeskopia txarto amaitu da (Kodea: $EXIT_CODE)." >> $LOG_FILE
+    echo "ERROREA: Babeskopia ez da burutu. Ikusi komandoaren irteera." >> $LOG_FILE
 fi
 
-echo "--- Babeskopia amaitu da ---" >> $LOG_FILE
+echo "Babeskopia amaitu da." >> $LOG_FILE
+echo "----------------------------------------------------" >> $LOG_FILE

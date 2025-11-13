@@ -1,24 +1,24 @@
 #!/bin/bash
 
-# Konfigurazioa
-TMP_DAYS=7          # /tmp-n 7 egun baino zaharragoak
-LOG_DAYS=30         # /var/log-en 30 egun baino zaharragoak (gz/zip fitxategiak)
-LOG_FILE="/var/log/cleanup.log"
-DATE=$(date +"%Y-%m-%d %H:%M:%S")
+# Aldagaiak
+TMP_DIR="/tmp"
+LOG_DIR="/var/log"
+DAYS_TMP=7
+DAYS_LOG=30
+LOG_FILE="/var/log/garbitze.log"
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 
-echo "--- $DATE - Garbiketa hasi da ---" >> $LOG_FILE
+# Garbiketa prozesua hasi
+echo "----------------------------------------------------" >> $LOG_FILE
+echo "Garbiketa hasi da: $TIMESTAMP" >> $LOG_FILE
 
-# 1. /tmp karpetako fitxategiak ezabatu (7 egun baino zaharragoak)
-echo "$DATE - /tmp karpeta garbitzen..." >> $LOG_FILE
-find /tmp -type f -atime +$TMP_DAYS -delete 2>&1 | while read line ; do
-    echo "$DATE - Ezabatua (tmp): $line" >> $LOG_FILE
-done
+echo "1. /tmp karpetako fitxategiak ($DAYS_TMP egun baino zaharragoak) ezabatzen..." >> $LOG_FILE
+# find komandoa erabili ezabatzeko (izenekoak ez ditugu ezabatuko)
+find $TMP_DIR -type f -mtime +$DAYS_TMP -delete -print >> $LOG_FILE 2>&1
 
-# 2. /var/log karpetako log fitxategi zaharrak ezabatu (30 egun baino zaharragoak, .gz, .zip, .old)
-echo "$DATE - /var/log karpeta garbitzen..." >> $LOG_FILE
-find /var/log -type f -name "*.gz" -o -name "*.zip" -o -name "*.old" -atime +$LOG_DAYS -delete 2>&1 | while read line ; do
-    echo "$DATE - Ezabatua (log): $line" >> $LOG_FILE
-done
+echo "2. /var/log karpetako .log fitxategiak ($DAYS_LOG egun baino zaharragoak) ezabatzen..." >> $LOG_FILE
+# find komandoa erabili .log fitxategiak ezabatzeko
+find $LOG_DIR -type f -name "*.log" -mtime +$DAYS_LOG -delete -print >> $LOG_FILE 2>&1
 
-echo "$DATE - Garbiketa ondo amaitu da." >> $LOG_FILE
-echo "--- Garbiketa amaitu da ---" >> $LOG_FILE
+echo "Garbiketa amaitu da." >> $LOG_FILE
+echo "----------------------------------------------------" >> $LOG_FILE
