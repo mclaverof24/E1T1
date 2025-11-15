@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IdazkaritzaApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bc992dc9fefaecd92a306743e0d883faf00827d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b30278453932fd2e3f537acc6fd8208f746c51ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("IdazkaritzaApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IdazkaritzaApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

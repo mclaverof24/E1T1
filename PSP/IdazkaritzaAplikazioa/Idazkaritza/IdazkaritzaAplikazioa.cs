@@ -27,6 +27,7 @@ namespace IdazkaritzaApp
         public IdazkaritzaAplikazioa()
         {
             InitializeComponent();
+            Eskaerak = new BlockingCollection<Eskaera>();
             Langile1 = new Langile { Id=1, Izena="Gustavo Fring", LangileAtaza=new Task(()=>EskaerakBete(1))};
             Langile1 = new Langile { Id = 2, Izena = "Trevor Philps", LangileAtaza = new Task(() => EskaerakBete(2)) };
             Bezeroak = new BindingList<BezeroaCtrl>();
@@ -97,7 +98,7 @@ namespace IdazkaritzaApp
                 BezeroaCtrl bezeroaCtrl = new BezeroaCtrl { Bezeroa = bezeroBerria };
                 Bezeroak.Add(bezeroaCtrl);
                 HurrengoBezeroId++;
-                bezeroaCtrl.BezeroarenZerbitzariaHasi();
+                bezeroaCtrl.BezeroarenZerbitzariakHasi();
             }
         }
 

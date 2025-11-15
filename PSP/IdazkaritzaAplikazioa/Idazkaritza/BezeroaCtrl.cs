@@ -17,74 +17,81 @@ namespace IdazkaritzaApp
         public Bezeroa Bezeroa { get; set; }
         public int BezeroId { get { return Bezeroa.Id; } } // propietate auxiliarra, comboboxean bindinga erabiltzeko
         public string BezeroIzena { get { return Bezeroa.Id +" - "+ Bezeroa.Izena; } } // propietate auxiliarra, comboboxean bindinga erabiltzeko
-        public NamedPipeServerStream Zerbitzaria { get; set; }
+
+        //Full-duplex komunikazio-eredua bi pipekin, noranzko bakarrekoa bakoitza.
+        public NamedPipeServerStream BezeroaEntzunPipe { get; set; } 
+        public NamedPipeServerStream BezeroariBidaliPipe { get; set; }
+
         public StreamReader Reader { get; private set; }
         public StreamWriter Writer { get; private set; }
         public Process Prozesua { get; set; }
         public Task BezeroaEntzunAtaza { get; set; }
 
 
-        public void BezeroarenZerbitzariaHasi()
-        {
-            Zerbitzaria = new NamedPipeServerStream("hodia" + Bezeroa.Id);
-            Writer = new StreamWriter(Zerbitzaria);
-
-
-
-            ProcessStartInfo info = new ProcessStartInfo(@"..\..\..\..\Bezeroa\bin\Debug\net8.0-windows\Bezeroa.exe");
+        public void BezeroarenZerbitzariakHasi()
+        {            
+            ProcessStartInfo info = new ProcessStartInfo(@"..\..\..\..\Bezeroa\bin\Debug\net8.0-windows\BezeroaApp.exe");
             info.ArgumentList.Add(JsonSerializer.Serialize(Bezeroa));
             info.CreateNoWindow = false;
             info.WindowStyle = ProcessWindowStyle.Normal;
             info.UseShellExecute = true;
-            Prozesua = Process.Start(info);
+            
+            // Bi ataza ezberdinetan sarrera eta irteera zerbitzariak prestatu, konexio itxaroten geratuko direnez, paraleloan egitea hobea da, interfaze grafikoa ez blokeatzeko tarte horretan.
             BezeroaEntzunAtaza = Task.Run(BezeroaEntzun);
+            Task.Run(MezuZerbitzariaPrestatu);
+            // Bezero honen aplikazioa simulatzeko prozesua hasi, behin zerbitzariak prestatuta. Azken hauek konexioa itxaroten daude eta, prozesua hastean, bere aldetik konektatuko da bezeroa bi zerbitzarietara.
+            Prozesua = Process.Start(info);
         }
 
         public void BezeroaEntzun()
         {
-
-            Zerbitzaria.WaitForConnection();
-            Reader = new StreamReader(Zerbitzaria);
+            BezeroaEntzunPipe = new NamedPipeServerStream("eskaerak" + Bezeroa.Id, PipeDirection.In); // Soilik barrurako noranzkoa izango du, eskaerak jasotzeko.
+            BezeroaEntzunPipe.WaitForConnection();
+            Reader = new StreamReader(BezeroaEntzunPipe);
             
 
-            //Eskaerak jasotzera edo Bezeroak checkout sakatzera ixtera itxaron
-            while (true)
+            //Eskaerak jasotzera edo Bezeroak checkout sakatzera itxaron
+            while (BezeroaEntzunPipe.IsConnected)
             {
-                //Reader.ReadLine
-                Eskaera eskaera = JsonSerializer.Deserialize<Eskaera>(Reader.ReadLine());
+                string eskaeraJson = Reader.ReadLine();
+                if (eskaeraJson != null)
+                {
+                    Eskaera eskaera = JsonSerializer.Deserialize<Eskaera>(eskaeraJson);
+                    IdazkaritzaAplikazioa.Eskaerak.Add(eskaera);
+                }
 
-                IdazkaritzaAplikazioa.Eskaerak.Add(eskaera);
+
             }
+        }
+
+        public void MezuZerbitzariaPrestatu()
+        {
+            BezeroariBidaliPipe = new NamedPipeServerStream("mezuak" + Bezeroa.Id, PipeDirection.Out);// Soilik kanporako noranzkoa izango du, mezuak bidaltzeko.
+            BezeroariBidaliPipe.WaitForConnection();
+            Writer = new StreamWriter(BezeroariBidaliPipe) { AutoFlush=true};// Writer-aren AutoFlush propietatea true bezala hasierazten dugu Writer.Flush aurrezteko            
         }
 
         public void MezuaBidali(Mezua mezua)
         {
-            //Writer.AutoFlush = true; // Autoflush aconsejable al parecer
-            //crea task que envía mensaje y cierra task, local. El task de entzun está como propiedad de Bezeroa porque esa task se queda escuchando desde iniciar el Bezeroa.
-            //Writer.WriteLine
-            //Zerbitzaria.WaitForConnection();
-            if (Zerbitzaria.IsConnected)
+            
+            if (BezeroariBidaliPipe.IsConnected)
             {
-                Writer.AutoFlush = true;
-                Task.Run(() =>
-                {
-                    Writer.WriteLine(JsonSerializer.Serialize(mezua));
-                });
+                Writer.WriteLine(JsonSerializer.Serialize(mezua));
             }
         }
 
-        public void EskaeraGehitu()
-        {
-            //BezeroaEntzun eskaera bat jasotzean, deserializatu eta BlockingCollectionera gehitu
-        }
+        //public void EskaeraGehitu()
+        //{
+        //    //BezeroaEntzun eskaera bat jasotzean, deserializatu eta BlockingCollectionera gehitu
+        //}
 
-        public void CheckOut()
-        {
-            Zerbitzaria.Close();
-            Zerbitzaria.Dispose();
-            Prozesua.Kill();
-            Prozesua.Close();
-        }
+        //public void CheckOut()
+        //{
+        //    Zerbitzaria.Close();
+        //    Zerbitzaria.Dispose();
+        //    Prozesua.Kill();
+        //    Prozesua.Close();
+        //}
 
     }
 }

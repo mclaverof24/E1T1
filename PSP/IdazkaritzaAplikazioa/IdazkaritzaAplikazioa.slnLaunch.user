@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "Idazkaritza\\IdazkaritzaApp.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Bezeroa\\BezeroaApp.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

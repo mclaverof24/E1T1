@@ -16,29 +16,42 @@ namespace BezeroaApp
 {
     public partial class BezeroenLeihoa : Form
     {
-        public NamedPipeClientStream Bezeroa { get; set; }
+        public int BezeroId { get; set; }
+        //Full-duplex komunikazio-eredua bi pipekin, noranzko bakarrekoa bakoitza.
+        public NamedPipeClientStream IdazkaritzaEntzunPipe { get; set; }
+        public NamedPipeClientStream IdazkaritzariBidaliPipe { get; set; }
+
         public StreamReader Reader { get; set; }
         public StreamWriter Writer { get; set; }
         public Task EntzunAtaza { get; set; }
-        public void BezeroaHasi(int id)
+        public void ZerbitzarietaraKonektatu()
         {
-            Bezeroa = new NamedPipeClientStream("hodia" + id);
-
-            Reader = new StreamReader(Bezeroa);
-            Writer = new StreamWriter(Bezeroa);
+            Task.Run(EskaerenZerbitzariraKonektatu);
             EntzunAtaza = Task.Run(ZerbitzariaEntzun);
         }
 
         public void ZerbitzariaEntzun()
         {
-            Bezeroa.Connect();
-            Writer.AutoFlush = true; // Ezin da ezarri konektatu aurretik, horretarako egiten da hemen, baina ez da Writer-a erabiliko eskaerak bidali arte.
-            while (true)
+            IdazkaritzaEntzunPipe = new NamedPipeClientStream(".", "mezuak" + BezeroId, PipeDirection.In);
+            IdazkaritzaEntzunPipe.Connect();
+            Reader = new StreamReader(IdazkaritzaEntzunPipe);
+            while (IdazkaritzaEntzunPipe.IsConnected)
             {
-                Mezua mezua = JsonSerializer.Deserialize<Mezua>(Reader.ReadLine());
-                Debug.WriteLine(mezua);
-                mezuakDataGridView.Invoke(new MethodInvoker(() => { mezuakDataGridView.Rows.Add(mezua.Data, mezua.Edukia); }));
+                string mezuaJson = Reader.ReadLine();
+                if (mezuaJson != null) {
+                    Mezua mezua = JsonSerializer.Deserialize<Mezua>(mezuaJson);
+                    Debug.WriteLine(mezua);
+                    mezuakDataGridView.Invoke(new MethodInvoker(() => { mezuakDataGridView.Rows.Add(mezua.Data, mezua.Edukia); }));
+                }
+                
             }
+        }
+
+        public void EskaerenZerbitzariraKonektatu()
+        {
+            IdazkaritzariBidaliPipe = new NamedPipeClientStream(".", "eskaerak" + BezeroId, PipeDirection.Out);
+            IdazkaritzariBidaliPipe.Connect();
+            Writer = new StreamWriter(IdazkaritzariBidaliPipe) { AutoFlush = true };
         }
 
         public BezeroenLeihoa(Bezeroa bezeroa)
@@ -47,7 +60,8 @@ namespace BezeroaApp
             bezeroIdLabel.Text = bezeroa.Id.ToString();
             bezeroIzenaLabel.Text = bezeroa.Izena;
             ostatuMotaLabel.Text = bezeroa.OstatuMota;
-            BezeroaHasi(bezeroa.Id);
+            BezeroId = bezeroa.Id;
+            ZerbitzarietaraKonektatu();
 
 
         }
@@ -77,7 +91,7 @@ namespace BezeroaApp
             if (eskaeraMotaComboBox.SelectedItem!=null)
             {
                 Eskaera eskaera = new Eskaera { Mota=eskaeraMotaComboBox.SelectedItem.ToString()};
-                if (Bezeroa.IsConnected) {
+                if (IdazkaritzariBidaliPipe.IsConnected) {
                     Writer.WriteLine(JsonSerializer.Serialize(eskaera));
                     Debug.WriteLine(eskaera.ToString());
                 }
