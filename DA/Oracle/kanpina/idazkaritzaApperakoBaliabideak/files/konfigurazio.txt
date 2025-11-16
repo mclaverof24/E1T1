@@ -1,0 +1,4 @@
+xml_fitxategia=files/Kanpinak.xml
+db_url=jdbc:oracle:thin:@localhost:1521/XEPDB1 
+db_user=mclavero
+db_pass=root

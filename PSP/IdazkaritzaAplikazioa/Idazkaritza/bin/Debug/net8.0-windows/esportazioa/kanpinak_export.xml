@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kanpinak>
+	<kanpina id="PBI00009">
+		<izena>ÁREA AUTOCARAVANAS Y CARAVANAS LANESTOSA</izena>
+		<deskribapena>Aparkalekua 6.000 metroko gune berdean dago, hesitutako 22 lursailetan banatuta dago eta 3 metro ...</deskribapena>
+		<kategoria>S</kategoria>
+		<edukiera>0</edukiera>
+		<kokalekua>43.2179261135912,-3.43952413914483</kokalekua>
+		<helbidea>
+			<kalea>Mirabueno 6</kalea>
+			<postaKodea>48895</postaKodea>
+			<herria id="51">Legazpi</herria>
+			<probintzia id="48">Bizkaia</probintzia>
+		</helbidea>
+		<telefonoa>628272835</telefonoa>
+		<emaila>lanestosacamperpark@gmail.com</emaila>
+		<webgunea>https://www.lanestosacamperpark.com/</webgunea>
+		<estekak>
+			<friendly>https://turismoa.euskadi.eus/eu/ostatuak/lanestosako-autokarabanetarako-eta-karabanetarako-eremua/aa30-12375/eu/</friendly>
+			<physical>https://turismoa.euskadi.eus/aa30-12375/eu/contenidos/a_alojamiento/0000070481_a1_rec_turismo/eu_70481/70481-ficha2.html</physical>
+		</estekak>
+		<fitxategiak>
+			<dataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000070481_a1_rec_turismo/eu_70481/data/70481_openData.xml</dataXML>
+			<metadataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000070481_a1_rec_turismo/r01Index/0000070481_a1_rec_turismo-idxContent.xml</metadataXML>
+			<zipFile>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000070481_a1_rec_turismo/opendata/0000070481_a1_rec_turismo.zip</zipFile>
+		</fitxategiak>
+	</kanpina>
+	<kanpina id="PSS00018">
+		<izena>LAKIOLA</izena>
+		<deskribapena>Kanpin txikia baina erosoa da, Gipuzkoako barnealdean aurkitzen da arbolaz inguratutako eremu nat...</deskribapena>
+		<kategoria>T</kategoria>
+		<edukiera>20</edukiera>
+		<kokalekua>43.070930551862,-2.34933989322147</kokalekua>
+		<helbidea>
+			<kalea>Urtatza-Egialdea Auzoa 18</kalea>
+			<postaKodea>20230</postaKodea>
+			<herria id="51">Legazpi</herria>
+			<probintzia id="20">Gipuzkoa</probintzia>
+		</helbidea>
+		<telefonoa>649 577 442</telefonoa>
+		<emaila>campinglakiola@gmail.com</emaila>
+		<webgunea>null</webgunea>
+		<estekak>
+			<friendly>https://turismoa.euskadi.eus/eu/ostatuak/lakiola-kanpina/aa30-12375/eu/</friendly>
+			<physical>https://turismoa.euskadi.eus/aa30-12375/eu/contenidos/a_alojamiento/0000025461_a1_rec_turismo/eu_25461/25461-ficha2.html</physical>
+		</estekak>
+		<fitxategiak>
+			<dataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000025461_a1_rec_turismo/eu_25461/data/25461_openData.xml</dataXML>
+			<metadataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000025461_a1_rec_turismo/r01Index/0000025461_a1_rec_turismo-idxContent.xml</metadataXML>
+			<zipFile>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000025461_a1_rec_turismo/opendata/0000025461_a1_rec_turismo.zip</zipFile>
+		</fitxategiak>
+	</kanpina>
+</kanpinak>

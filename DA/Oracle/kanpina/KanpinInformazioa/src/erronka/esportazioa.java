@@ -15,15 +15,19 @@ public class esportazioa {
     
     // Esportatutako fitxategiak gordeko diren karpetaren izena.
     private static final String ESPORTAZIOA_KARPETA = "esportazioa";
+    private static String fitxategiIzena;
 
     /**
      * Konexioa ezarri, DBko kontsulta exekutatu eta datuak CSV eta XML fitxategietara
-     * esportatzeko prozesu osoa kudeatzen du, probintzia eta herri zehatz baterako datuak iragaziz.
+     * esportatzeko prozesu osoa kudeatzen du, herri zehatz baterako datuak iragaziz.
      * @param config Properties objektua, datu-basearen konexio-parametroak dituena.
-     * @param probintziaIzena Esportatu nahi den probintziaren izena.
-     * @param herriaIzena Esportatu nahi den herriaren izena.
+     * @param formatua Esportazio-emaitzaren formatua, CSV edo XML.
+     * @param herriaKodea Esportatu nahi den herriaren kodea.
+     * @param herriaIzena Esportatu nahi den herriaren izena, soilik fitxategiaren izenean adierazteko.
      */
-    public void esportatu(Properties config, String herriaIzena) {
+    public void esportatu(Properties config,String formatua, String herriaKodea, String herriaIzena) {
+    	// Esportazioaren emaitzarako fitxategiaren izena ezarri, aukeratutako herriaren arabera
+    	fitxategiIzena=herriaIzena;
         // Konexio-parametroak irakurri
         String dbUrl = config.getProperty("db_url").trim();
         String dbUser = config.getProperty("db_user").trim();
@@ -54,17 +58,20 @@ public class esportazioa {
                  ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY)) {
 
                 // Parametroak ezarri (DB injekzioa saihesteko)
-                pstmt.setString(1, herriaIzena.trim());
+                pstmt.setString(1, herriaKodea.trim());
                 
                 try (ResultSet rs = pstmt.executeQuery()) {
                     
-                    // 1. Datuak CSV fitxategira esportatu
-                    esportatuCSV(rs);
-                    
-                    // 2. ResultSet-a hasierara itzuli
-                    rs.beforeFirst(); 
-                    esportatuXML(rs);
-
+                    switch (formatua) {
+                    case "CSV":
+                    	// 1. Datuak CSV fitxategira esportatu
+                        esportatuCSV(rs);
+                        break;
+                    case "XML":
+                    	// 2. ResultSet-a hasierara itzuli
+                        esportatuXML(rs);
+                        break;
+                    }
                 } // ResultSet itxi
             } // PreparedStatement itxi
         } catch (Exception e) {
@@ -79,7 +86,7 @@ public class esportazioa {
      * @param rs Datu-basearen emaitza-multzoa.
      */
     private void esportatuCSV(ResultSet rs) throws SQLException, IOException {
-        String csvFitx = ESPORTAZIOA_KARPETA + File.separator + "kanpinak_export.csv";
+        String csvFitx = ESPORTAZIOA_KARPETA + File.separator + fitxategiIzena+ "_export.csv";
         try (FileWriter writer = new FileWriter(csvFitx)) {
             writer.append("Kodea\tIzena\tKokalekua\tHelbidea\tPostaKodea\tHerria\tProbintzia\tKategoria\tEdukiera\n");
             
@@ -104,7 +111,7 @@ public class esportazioa {
      * @param rs Datu-basearen emaitza-multzoa.
      */
     private void esportatuXML(ResultSet rs) throws SQLException, IOException {
-        String xmlFitx = ESPORTAZIOA_KARPETA + File.separator + "kanpinak_export.xml";
+        String xmlFitx = ESPORTAZIOA_KARPETA + File.separator + fitxategiIzena+ "_export.xml";
         try (FileWriter writer = new FileWriter(xmlFitx)) {
             
             // XML goiburu berria (standalone="no" barne)

@@ -40,6 +40,12 @@
             label5 = new Label();
             label4 = new Label();
             eskaerakDataGridView = new DataGridView();
+            EskaeraErref = new DataGridViewTextBoxColumn();
+            BezeroID = new DataGridViewTextBoxColumn();
+            BezeroIzena = new DataGridViewTextBoxColumn();
+            EskaeraMota = new DataGridViewTextBoxColumn();
+            Langilea = new DataGridViewTextBoxColumn();
+            Egoera = new DataGridViewTextBoxColumn();
             lanaldiaBukatuBotoia = new Button();
             lanaldiaHasiBotoia = new Button();
             tabPage3 = new TabPage();
@@ -54,23 +60,15 @@
             button8 = new Button();
             button7 = new Button();
             Datuak = new TabPage();
-            comboBox5 = new ComboBox();
-            label15 = new Label();
-            comboBox4 = new ComboBox();
+            herriaComboBox = new ComboBox();
             label14 = new Label();
             label11 = new Label();
-            button6 = new Button();
-            button5 = new Button();
-            comboBox3 = new ComboBox();
+            datuakInportatuBotoia = new Button();
+            esportatuBotoia = new Button();
+            formatuaComboBox = new ComboBox();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
-            EskaeraErref = new DataGridViewTextBoxColumn();
-            BezeroID = new DataGridViewTextBoxColumn();
-            BezeroIzena = new DataGridViewTextBoxColumn();
-            EskaeraMota = new DataGridViewTextBoxColumn();
-            Langilea = new DataGridViewTextBoxColumn();
-            Egoera = new DataGridViewTextBoxColumn();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -215,6 +213,55 @@
             eskaerakDataGridView.Size = new Size(675, 188);
             eskaerakDataGridView.TabIndex = 5;
             // 
+            // EskaeraErref
+            // 
+            EskaeraErref.HeaderText = "EskaeraErref";
+            EskaeraErref.MinimumWidth = 6;
+            EskaeraErref.Name = "EskaeraErref";
+            EskaeraErref.ReadOnly = true;
+            EskaeraErref.Visible = false;
+            EskaeraErref.Width = 125;
+            // 
+            // BezeroID
+            // 
+            BezeroID.HeaderText = "BezeroID";
+            BezeroID.MinimumWidth = 6;
+            BezeroID.Name = "BezeroID";
+            BezeroID.ReadOnly = true;
+            BezeroID.Width = 125;
+            // 
+            // BezeroIzena
+            // 
+            BezeroIzena.HeaderText = "BezeroIzena";
+            BezeroIzena.MinimumWidth = 6;
+            BezeroIzena.Name = "BezeroIzena";
+            BezeroIzena.ReadOnly = true;
+            BezeroIzena.Width = 125;
+            // 
+            // EskaeraMota
+            // 
+            EskaeraMota.HeaderText = "EskaeraMota";
+            EskaeraMota.MinimumWidth = 6;
+            EskaeraMota.Name = "EskaeraMota";
+            EskaeraMota.ReadOnly = true;
+            EskaeraMota.Width = 125;
+            // 
+            // Langilea
+            // 
+            Langilea.HeaderText = "Langilea";
+            Langilea.MinimumWidth = 6;
+            Langilea.Name = "Langilea";
+            Langilea.ReadOnly = true;
+            Langilea.Width = 125;
+            // 
+            // Egoera
+            // 
+            Egoera.HeaderText = "Egoera";
+            Egoera.MinimumWidth = 6;
+            Egoera.Name = "Egoera";
+            Egoera.ReadOnly = true;
+            Egoera.Width = 125;
+            // 
             // lanaldiaBukatuBotoia
             // 
             lanaldiaBukatuBotoia.Enabled = false;
@@ -350,14 +397,12 @@
             // 
             // Datuak
             // 
-            Datuak.Controls.Add(comboBox5);
-            Datuak.Controls.Add(label15);
-            Datuak.Controls.Add(comboBox4);
+            Datuak.Controls.Add(herriaComboBox);
             Datuak.Controls.Add(label14);
             Datuak.Controls.Add(label11);
-            Datuak.Controls.Add(button6);
-            Datuak.Controls.Add(button5);
-            Datuak.Controls.Add(comboBox3);
+            Datuak.Controls.Add(datuakInportatuBotoia);
+            Datuak.Controls.Add(esportatuBotoia);
+            Datuak.Controls.Add(formatuaComboBox);
             Datuak.Controls.Add(label10);
             Datuak.Controls.Add(label9);
             Datuak.Controls.Add(label8);
@@ -368,36 +413,19 @@
             Datuak.Text = "Datuak";
             Datuak.UseVisualStyleBackColor = true;
             // 
-            // comboBox5
+            // herriaComboBox
             // 
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(174, 291);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(151, 28);
-            comboBox5.TabIndex = 10;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(43, 291);
-            label15.Name = "label15";
-            label15.Size = new Size(79, 20);
-            label15.TabIndex = 9;
-            label15.Text = "Probintzia:";
-            label15.Click += label15_Click;
-            // 
-            // comboBox4
-            // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(174, 339);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(151, 28);
-            comboBox4.TabIndex = 8;
+            herriaComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            herriaComboBox.FormattingEnabled = true;
+            herriaComboBox.Location = new Point(174, 320);
+            herriaComboBox.Name = "herriaComboBox";
+            herriaComboBox.Size = new Size(151, 28);
+            herriaComboBox.TabIndex = 8;
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(43, 339);
+            label14.Location = new Point(43, 320);
             label14.Name = "label14";
             label14.Size = new Size(53, 20);
             label14.TabIndex = 7;
@@ -413,32 +441,36 @@
             label11.Text = "(Euskal autonomi erkidegoko kanpin guztien informazioa inportatu)";
             label11.Click += label11_Click;
             // 
-            // button6
+            // datuakInportatuBotoia
             // 
-            button6.Location = new Point(43, 107);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 29);
-            button6.TabIndex = 5;
-            button6.Text = "Inportatu";
-            button6.UseVisualStyleBackColor = true;
+            datuakInportatuBotoia.Location = new Point(43, 107);
+            datuakInportatuBotoia.Name = "datuakInportatuBotoia";
+            datuakInportatuBotoia.Size = new Size(94, 29);
+            datuakInportatuBotoia.TabIndex = 5;
+            datuakInportatuBotoia.Text = "Inportatu";
+            datuakInportatuBotoia.UseVisualStyleBackColor = true;
+            datuakInportatuBotoia.Click += DatuakInportatuBotoia_Click;
             // 
-            // button5
+            // esportatuBotoia
             // 
-            button5.Location = new Point(459, 292);
-            button5.Name = "button5";
-            button5.Size = new Size(94, 29);
-            button5.TabIndex = 4;
-            button5.Text = "Esportatu";
-            button5.UseVisualStyleBackColor = true;
+            esportatuBotoia.Location = new Point(459, 292);
+            esportatuBotoia.Name = "esportatuBotoia";
+            esportatuBotoia.Size = new Size(94, 29);
+            esportatuBotoia.TabIndex = 4;
+            esportatuBotoia.Text = "Esportatu";
+            esportatuBotoia.UseVisualStyleBackColor = true;
+            esportatuBotoia.Click += EsportatuBotoia_Click;
             // 
-            // comboBox3
+            // formatuaComboBox
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(174, 243);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(151, 28);
-            comboBox3.TabIndex = 3;
-            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
+            formatuaComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            formatuaComboBox.FormattingEnabled = true;
+            formatuaComboBox.Items.AddRange(new object[] { "CSV", "XML" });
+            formatuaComboBox.Location = new Point(174, 243);
+            formatuaComboBox.Name = "formatuaComboBox";
+            formatuaComboBox.Size = new Size(151, 28);
+            formatuaComboBox.TabIndex = 3;
+            formatuaComboBox.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
             // 
             // label10
             // 
@@ -468,55 +500,6 @@
             label8.Size = new Size(160, 20);
             label8.TabIndex = 0;
             label8.Text = "DATUAK INPORTATU";
-            // 
-            // EskaeraErref
-            // 
-            EskaeraErref.HeaderText = "EskaeraErref";
-            EskaeraErref.MinimumWidth = 6;
-            EskaeraErref.Name = "EskaeraErref";
-            EskaeraErref.ReadOnly = true;
-            EskaeraErref.Visible = false;
-            EskaeraErref.Width = 125;
-            // 
-            // BezeroID
-            // 
-            BezeroID.HeaderText = "BezeroID";
-            BezeroID.MinimumWidth = 6;
-            BezeroID.Name = "BezeroID";
-            BezeroID.ReadOnly = true;
-            BezeroID.Width = 125;
-            // 
-            // BezeroIzena
-            // 
-            BezeroIzena.HeaderText = "BezeroIzena";
-            BezeroIzena.MinimumWidth = 6;
-            BezeroIzena.Name = "BezeroIzena";
-            BezeroIzena.ReadOnly = true;
-            BezeroIzena.Width = 125;
-            // 
-            // EskaeraMota
-            // 
-            EskaeraMota.HeaderText = "EskaeraMota";
-            EskaeraMota.MinimumWidth = 6;
-            EskaeraMota.Name = "EskaeraMota";
-            EskaeraMota.ReadOnly = true;
-            EskaeraMota.Width = 125;
-            // 
-            // Langilea
-            // 
-            Langilea.HeaderText = "Langilea";
-            Langilea.MinimumWidth = 6;
-            Langilea.Name = "Langilea";
-            Langilea.ReadOnly = true;
-            Langilea.Width = 125;
-            // 
-            // Egoera
-            // 
-            Egoera.HeaderText = "Egoera";
-            Egoera.MinimumWidth = 6;
-            Egoera.Name = "Egoera";
-            Egoera.ReadOnly = true;
-            Egoera.Width = 125;
             // 
             // IdazkaritzaAplikazioa
             // 
@@ -566,9 +549,9 @@
         private Button mezuaBidaliBotoia;
         private TabPage Bideojokoa;
         private TabPage Datuak;
-        private Button button6;
-        private Button button5;
-        private ComboBox comboBox3;
+        private Button datuakInportatuBotoia;
+        private Button esportatuBotoia;
+        private ComboBox formatuaComboBox;
         private Label label10;
         private Label label9;
         private Label label8;
@@ -577,9 +560,7 @@
         private Label label12;
         private Button button8;
         private Button button7;
-        private ComboBox comboBox5;
-        private Label label15;
-        private ComboBox comboBox4;
+        private ComboBox herriaComboBox;
         private Label label14;
         private DataGridViewTextBoxColumn EskaeraErref;
         private DataGridViewTextBoxColumn BezeroID;

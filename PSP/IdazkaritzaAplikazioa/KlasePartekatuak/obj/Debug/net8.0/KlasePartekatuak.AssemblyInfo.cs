@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KlasePartekatuak")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3245e28923c8d9c06e88cd1fbc5e5d25e87bf80a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f73065b11f88a89b093caa774a6564137c6b345e")]
 [assembly: System.Reflection.AssemblyProductAttribute("KlasePartekatuak")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KlasePartekatuak")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

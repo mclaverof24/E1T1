@@ -20,18 +20,19 @@ namespace IdazkaritzaApp
 {
     public partial class IdazkaritzaAplikazioa : Form
     {
-        public  BindingList<BezeroaCtrl> Bezeroak { get; set; }
+        public BindingList<BezeroaCtrl> Bezeroak { get; set; }
         public int HurrengoBezeroId { get; set; } = 1;
-        public  BlockingCollection<Eskaera> Eskaerak { get; set; }
+        public BlockingCollection<Eskaera> Eskaerak { get; set; }
         public static List<Langile> Langileak { get; set; }
         public CancellationTokenSource Cts { get; set; }
         public CancellationToken Token { get; set; }
         //public Langile Langile1 { get; set; }
         //public Langile Langile2 { get; set; }
+        public static Dictionary<string, string> Herriak;
         public IdazkaritzaAplikazioa()
         {
             InitializeComponent();
-
+            StartPosition = FormStartPosition.CenterScreen;
             Eskaerak = new BlockingCollection<Eskaera>();
 
             //Langile1 = new Langile { Id=1, Izena="Gustavo Fring", LangileAtaza=new Task(()=>EskaerakBete(1))};
@@ -45,6 +46,27 @@ namespace IdazkaritzaApp
             bezeroMezuHartzaileakComboBox.DisplayMember = "BezeroIzena";
             bezeroMezuHartzaileakComboBox.ValueMember = "BezeroId";
 
+            Herriak = new Dictionary<string, string>
+            {
+                { "Gorliz", "43" },
+                { "Hondarribia", "36" },
+                { "Donostia San Sebastián", "69" },
+                { "Deba", "29" },
+                { "Mendexa", "63" },
+                { "Orio", "61" },
+                { "Mundaka", "68" },
+                { "Mutriku", "56" },
+                { "Zarautz", "79" },
+                { "Vitoria-Gasteiz", "59" },
+                { "Sopela", "85" },
+                { "Aia", "16" },
+                { "Valdegovía Gaubea", "55" },
+                { "Legazpi", "51" },
+                { "Erriberagoitia Ribera Alta", "46" },
+                { "Bilbao", "20" },
+                { "Zumaia", "81" }
+            };
+            herriaComboBox.DataSource = Herriak.Keys.ToList();
             //comboBox3.Items.Add("CSV");
             //comboBox3.Items.Add("XML");
         }
@@ -132,14 +154,14 @@ namespace IdazkaritzaApp
                 //eskaerakDataGridView.Invoke(new MethodInvoker(() => eskaerakDataGridView.Rows[eskaera.TaulaErrenkadaIndizea].Cells["Egoera"].Value = "Beteta"));
                 eskaerakDataGridView.Invoke(new MethodInvoker(() => eskaerakDataGridView.Rows
                 .Cast<DataGridViewRow>()
-                .FirstOrDefault(r => r.Cells["EskaeraErref"].Value==eskaera)
+                .FirstOrDefault(r => r.Cells["EskaeraErref"].Value == eskaera)
                 .Cells["Egoera"].Value = "Beteta"));
             }
         }
 
         public void EskaeraGehitu(Eskaera eskaera)
         {
-            eskaerakDataGridView.Rows.Add(eskaera,eskaera.Bezeroa.Id, eskaera.Bezeroa.Izena, eskaera.Mota, eskaera.Langilea.Izena, "Bete gabe");
+            eskaerakDataGridView.Rows.Add(eskaera, eskaera.Bezeroa.Id, eskaera.Bezeroa.Izena, eskaera.Mota, eskaera.Langilea.Izena, "Bete gabe");
             //eskaera.TaulaErrenkadaIndizea = eskaerakDataGridView.Rows.Count - 1;
         }
 
@@ -150,7 +172,7 @@ namespace IdazkaritzaApp
             {
                 bezeroaCtrl.Prozesua.Kill();
                 bezeroaCtrl.Prozesua.WaitForExit();
-                
+
             }
             //Bezeroak.Clear();
         }
@@ -160,6 +182,61 @@ namespace IdazkaritzaApp
             lanaldiaBukatuBotoia.Enabled = false;
             lanaldiaHasiBotoia.Enabled = true;
             Cts.Cancel();
+        }
+
+        private void DatuakInportatuBotoia_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo info = new ProcessStartInfo
+            {
+                FileName = "java",
+                UseShellExecute = false,
+                CreateNoWindow = true,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true
+            };
+            info.ArgumentList.Add("-jar");
+            info.ArgumentList.Add(@"inportazioa.jar");
+            Process inportazioProzesua = Process.Start(info);
+            string sysout = inportazioProzesua.StandardOutput.ReadToEnd();
+            string erroreak = inportazioProzesua.StandardError.ReadToEnd();
+            inportazioProzesua.WaitForExit();
+            if (erroreak.Length == 0)
+            {
+                MessageBox.Show(this, "Datu-basea eguneratu da.", "Inportazio zuzena", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            Debug.WriteLine("ondo");
+        }
+
+        private void EsportatuBotoia_Click(object sender, EventArgs e)
+        {
+            if (formatuaComboBox.SelectedItem!=null && herriaComboBox.SelectedItem!=null)
+            {
+                ProcessStartInfo info = new ProcessStartInfo
+                {
+                    FileName = "java",
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true
+                };
+                info.ArgumentList.Add("-jar");
+                info.ArgumentList.Add(@"esportazioa.jar");
+                string formatua = formatuaComboBox.SelectedItem.ToString();
+                string herriIzena = herriaComboBox.SelectedItem.ToString();
+                string herriKodea = Herriak[herriIzena];
+                info.ArgumentList.Add(formatua);
+                info.ArgumentList.Add(herriKodea);
+                info.ArgumentList.Add(herriIzena);
+                Process esportazioProzesua = Process.Start(info);
+                string sysout = esportazioProzesua.StandardOutput.ReadToEnd();
+                string erroreak = esportazioProzesua.StandardError.ReadToEnd();
+                esportazioProzesua.WaitForExit();
+                if (erroreak.Length == 0)
+                {
+                    MessageBox.Show(this, $"{herriIzena}(e)ko kanpinen informazioa duen {formatua} fitxategia sortu da.", "Esportazio zuzena", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                Debug.WriteLine("ondo");
+            }
         }
     }
 }
