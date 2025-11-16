@@ -38,12 +38,13 @@ namespace BezeroaApp
             while (IdazkaritzaEntzunPipe.IsConnected)
             {
                 string mezuaJson = Reader.ReadLine();
-                if (mezuaJson != null) {
+                if (mezuaJson != null)
+                {
                     Mezua mezua = JsonSerializer.Deserialize<Mezua>(mezuaJson);
                     Debug.WriteLine(mezua);
                     mezuakDataGridView.Invoke(new MethodInvoker(() => { mezuakDataGridView.Rows.Add(mezua.Data, mezua.Edukia); }));
                 }
-                
+
             }
         }
 
@@ -61,6 +62,7 @@ namespace BezeroaApp
             bezeroIzenaLabel.Text = bezeroa.Izena;
             ostatuMotaLabel.Text = bezeroa.OstatuMota;
             BezeroId = bezeroa.Id;
+            eskaeraMotaComboBox.DataSource = Eskaera.MotaDenbora.Keys.ToList();
             ZerbitzarietaraKonektatu();
 
 
@@ -88,14 +90,24 @@ namespace BezeroaApp
 
         private void EskaeraEgin_Click(object sender, EventArgs e)
         {
-            if (eskaeraMotaComboBox.SelectedItem!=null)
+            if (eskaeraMotaComboBox.SelectedItem != null)
             {
-                Eskaera eskaera = new Eskaera { Mota=eskaeraMotaComboBox.SelectedItem.ToString()};
-                if (IdazkaritzariBidaliPipe.IsConnected) {
+                Eskaera eskaera = new Eskaera { Mota = eskaeraMotaComboBox.SelectedItem.ToString() };
+                if (IdazkaritzariBidaliPipe.IsConnected)
+                {
                     Writer.WriteLine(JsonSerializer.Serialize(eskaera));
                     Debug.WriteLine(eskaera.ToString());
                 }
             }
+        }
+
+        private void CheckOut_Click(object sender, EventArgs e)
+        {
+            IdazkaritzaEntzunPipe.Close();
+            IdazkaritzaEntzunPipe.Dispose();
+            IdazkaritzariBidaliPipe.Close();
+            IdazkaritzariBidaliPipe.Dispose();
+            Close();
         }
     }
 }

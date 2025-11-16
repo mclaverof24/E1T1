@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BezeroaApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b30278453932fd2e3f537acc6fd8208f746c51ea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3245e28923c8d9c06e88cd1fbc5e5d25e87bf80a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BezeroaApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BezeroaApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

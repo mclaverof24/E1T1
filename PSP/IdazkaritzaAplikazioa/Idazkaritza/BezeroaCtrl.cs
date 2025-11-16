@@ -9,11 +9,13 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using KlasePartekatuak;
 using System.Collections.Concurrent;
+using System.Security.Cryptography;
 
 namespace IdazkaritzaApp
 {
     public class BezeroaCtrl
     {
+        public IdazkaritzaAplikazioa IdazkaritzaErreferentzia { get; set; }
         public Bezeroa Bezeroa { get; set; }
         public int BezeroId { get { return Bezeroa.Id; } } // propietate auxiliarra, comboboxean bindinga erabiltzeko
         public string BezeroIzena { get { return Bezeroa.Id +" - "+ Bezeroa.Izena; } } // propietate auxiliarra, comboboxean bindinga erabiltzeko
@@ -57,11 +59,19 @@ namespace IdazkaritzaApp
                 if (eskaeraJson != null)
                 {
                     Eskaera eskaera = JsonSerializer.Deserialize<Eskaera>(eskaeraJson);
-                    IdazkaritzaAplikazioa.Eskaerak.Add(eskaera);
+                    eskaera.Beteta = false;
+                    eskaera.Bezeroa = Bezeroa;
+                    eskaera.Langilea = IdazkaritzaAplikazioa.Langileak[new Random().Next(0, 2)];
+                    IdazkaritzaErreferentzia.Invoke(new MethodInvoker(() => IdazkaritzaErreferentzia.EskaeraGehitu(eskaera)));
+                    
+                    IdazkaritzaErreferentzia.Eskaerak.Add(eskaera);
                 }
-
-
             }
+            try 
+            { 
+                IdazkaritzaErreferentzia.Invoke(new MethodInvoker(() => IdazkaritzaErreferentzia.Bezeroak.Remove(this)));
+            }
+            catch { }
         }
 
         public void MezuZerbitzariaPrestatu()
