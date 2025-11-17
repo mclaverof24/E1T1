@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IdazkaritzaApp;
+using KlasePartekatuak;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,12 +10,11 @@ using System.Drawing;
 using System.IO.Pipes;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Policy;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using IdazkaritzaApp;
-using KlasePartekatuak;
 
 
 namespace IdazkaritzaApp
@@ -209,7 +210,7 @@ namespace IdazkaritzaApp
 
         private void EsportatuBotoia_Click(object sender, EventArgs e)
         {
-            if (formatuaComboBox.SelectedItem!=null && herriaComboBox.SelectedItem!=null)
+            if (formatuaComboBox.SelectedItem != null && herriaComboBox.SelectedItem != null)
             {
                 ProcessStartInfo info = new ProcessStartInfo
                 {
@@ -237,6 +238,15 @@ namespace IdazkaritzaApp
                 }
                 Debug.WriteLine("ondo");
             }
+        }
+
+        private void JokoaIrekiBotoia_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://talde2.itch.io/kanpinajokoa",
+                UseShellExecute = true
+            });
         }
     }
 }

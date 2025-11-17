@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kanpinak>
+	<kanpina id="PSS00015">
+		<izena>ITXASPE</izena>
+		<deskribapena>Itxaspe kanpina Debako Itxaspe auzoan dago, inguru eder batean kokatuta. Bertatik itsasoa eta ami...</deskribapena>
+		<kategoria>P</kategoria>
+		<edukiera>483</edukiera>
+		<kokalekua>43.2941564117673,-2.32961258112602</kokalekua>
+		<helbidea>
+			<kalea>Itsaspe Auzoa, 16</kalea>
+			<postaKodea>20829</postaKodea>
+			<herria id="29">Deba</herria>
+			<probintzia id="20">Gipuzkoa</probintzia>
+		</helbidea>
+		<telefonoa>943 199 377</telefonoa>
+		<emaila>itxaspe@hotmail.es</emaila>
+		<webgunea>https://www.campingitxaspe.com/</webgunea>
+		<estekak>
+			<friendly>https://turismoa.euskadi.eus/eu/ostatuak/itxaspe-kanpina/aa30-12375/eu/</friendly>
+			<physical>https://turismoa.euskadi.eus/aa30-12375/eu/contenidos/a_alojamiento/0000000634_a1_rec_turismo/eu_634/634-ficha2.html</physical>
+		</estekak>
+		<fitxategiak>
+			<dataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000634_a1_rec_turismo/eu_634/data/634_openData.xml</dataXML>
+			<metadataXML>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000634_a1_rec_turismo/r01Index/0000000634_a1_rec_turismo-idxContent.xml</metadataXML>
+			<zipFile>https://turismoa.euskadi.eus/contenidos/a_alojamiento/0000000634_a1_rec_turismo/opendata/0000000634_a1_rec_turismo.zip</zipFile>
+		</fitxategiak>
+	</kanpina>
+</kanpinak>
